@@ -1,1 +1,11 @@
 docker exec -it <CONTAINER_ID> /bin/sh
+
+
+For c client server
+1) gcc server.c -o server
+2) gcc client.c -o client
+3) ./server 
+on another terminal
+./client 
+
+
