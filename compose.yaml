@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app1:
+    image: python:slim
+    container_name: python_app1
+    working_dir: /usr/src/app
+    volumes:
+      - ./app1:/usr/src/app
+    command: python app1.py
+    ports:
+      - "5000:5000"
+
+  app2:
+    image: python:slim
+    container_name: python_app2
+    working_dir: /usr/src/app
+    volumes:
+      - ./app2:/usr/src/app
+    command: python app2.py
+    ports:
+      - "5001:5001"
+ 
